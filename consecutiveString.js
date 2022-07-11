@@ -6,6 +6,16 @@ function longestConsec(strarr, k) {
     return '';
   }
 
+  if (k === 1) {
+    for (let i = 0; i < strarr.length; i++) {
+      current = strarr[i];
+      if (current.length > maxLength) {
+        maxLength = current.length;
+        result = current;
+      }
+    }
+  }
+
   for (let i = 0; i < strarr.length - 1; i++) {
     current = strarr[i];
     for (let j = 0; j < k - 1; j++) {
@@ -27,5 +37,18 @@ console.log(
   longestConsec(
     ['zone', 'abigail', 'theta', 'form', 'libe', 'zas', 'theta', 'abigail'],
     2
+  )
+);
+
+console.log(
+  longestConsec(
+    [
+      'ejjjjmmtthh',
+      'zxxuueeg',
+      'aanlljrrrxx',
+      'dqqqaaabbb',
+      'oocccffuucccjjjkkkjyyyeehh',
+    ],
+    1
   )
 );
