@@ -7,13 +7,10 @@ function longestConsec(strarr, k) {
   }
 
   if (k === 1) {
-    for (let i = 0; i < strarr.length; i++) {
-      current = strarr[i];
-      if (current.length > maxLength) {
-        maxLength = current.length;
-        result = current;
-      }
-    }
+    let result = strarr.reduce((acc, curr) =>
+      acc.length > curr.length ? acc : curr
+    );
+    return result;
   }
 
   for (let i = 0; i <= strarr.length - k; i++) {
