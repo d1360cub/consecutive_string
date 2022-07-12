@@ -8,7 +8,7 @@ function longestConsec(strarr, k) {
 
   if (k === 1) {
     let result = strarr.reduce((acc, curr) =>
-      acc.length > curr.length ? acc : curr
+      acc.length >= curr.length ? acc : curr
     );
     return result;
   }
@@ -26,26 +26,4 @@ function longestConsec(strarr, k) {
   return result;
 }
 
-console.log(
-  longestConsec(['tree', 'foling', 'trashy', 'blue', 'abcdef', 'uvwxyz'], 2)
-);
-
-console.log(
-  longestConsec(
-    ['zone', 'abigail', 'theta', 'form', 'libe', 'zas', 'theta', 'abigail'],
-    3
-  )
-);
-
-console.log(
-  longestConsec(
-    [
-      'ejjjjmmtthh',
-      'zxxuueeg',
-      'aanlljrrrxx',
-      'dqqqaaabbb',
-      'oocccffuucccjjjkkkjyyyeehh',
-    ],
-    1
-  )
-);
+module.exports = longestConsec;
