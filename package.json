@@ -1,0 +1,22 @@
+{
+  "name": "consecutive_string",
+  "version": "1.0.0",
+  "description": "Codewars consecutive strings",
+  "main": "consecutiveString.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d1360cub/consecutive_string.git"
+  },
+  "author": "d1360cub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d1360cub/consecutive_string/issues"
+  },
+  "homepage": "https://github.com/d1360cub/consecutive_string#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
