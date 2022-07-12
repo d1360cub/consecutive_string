@@ -16,7 +16,7 @@ function longestConsec(strarr, k) {
     }
   }
 
-  for (let i = 0; i < strarr.length - 1; i++) {
+  for (let i = 0; i <= strarr.length - k; i++) {
     current = strarr[i];
     for (let j = 0; j < k - 1; j++) {
       current += strarr[i + j + 1];
@@ -36,7 +36,7 @@ console.log(
 console.log(
   longestConsec(
     ['zone', 'abigail', 'theta', 'form', 'libe', 'zas', 'theta', 'abigail'],
-    2
+    3
   )
 );
 
